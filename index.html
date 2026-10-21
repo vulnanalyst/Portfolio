@@ -76,7 +76,7 @@
 
             <!-- Actions: Resume & Mobile Hamburger -->
             <div class="header-actions">
-                <a href="resume.pdf" class="btn-resume-header" id="resume-trigger-nav-btn"
+                <a href="https://drive.google.com/file/d/1GhNwkIVQh0cyW6IWtz1gKAGLvnOb8vHJ/preview" class="btn-resume-header" id="resume-trigger-nav-btn"
                     title="View Resume" target="_blank" rel="noopener noreferrer">
                     <i class="fa-solid fa-file-lines"></i>
                     <span>Resume</span>
@@ -98,7 +98,7 @@
                 <li><a href="#projects" class="mobile-item">Projects</a></li>
                 <li><a href="#certificates" class="mobile-item">Certificates</a></li>
                 <li><a href="#contact" class="mobile-item">Contact</a></li>
-                <li><a href="resume.pdf" class="mobile-item mobile-resume-btn" id="resume-trigger-mobile-btn"
+                <li><a href="https://drive.google.com/file/d/1GhNwkIVQh0cyW6IWtz1gKAGLvnOb8vHJ/preview" class="mobile-item mobile-resume-btn" id="resume-trigger-mobile-btn"
                         target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-lines"></i> View Resume</a>
                 </li>
             </ul>
@@ -136,7 +136,7 @@
                             <span>Explore Projects</span>
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
-                        <a href="resume.pdf" class="btn btn-secondary" id="hero-resume-trigger" target="_blank"
+                        <a href="https://drive.google.com/file/d/1GhNwkIVQh0cyW6IWtz1gKAGLvnOb8vHJ/preview" class="btn btn-secondary" id="hero-resume-trigger" target="_blank"
                             rel="noopener noreferrer">
                             <i class="fa-solid fa-file-lines"></i>
                             <span>View Resume</span>
@@ -831,7 +831,7 @@
     </footer>
 
     <!-- ==============================================
-         RESUME VIEWER MODAL (Protected View Only)
+         RESUME VIEWER MODAL (Google Drive Preview)
          ============================================== -->
     <div class="modal-layer" id="resume-modal" role="dialog" aria-modal="true" aria-labelledby="resume-title"
         aria-hidden="true">
@@ -847,17 +847,16 @@
             </div>
             <div class="modal-body" oncontextmenu="return false;">
                 <div class="resume-container">
-                    <iframe src="resume.pdf#toolbar=0&navpanes=0&scrollbar=0" id="resume-iframe" class="resume-iframe"
+                    <iframe src="https://drive.google.com/file/d/1GhNwkIVQh0cyW6IWtz1gKAGLvnOb8vHJ/preview" id="resume-iframe" class="resume-iframe"
                         title="Ayush Jakhmola Resume (View Only)" loading="lazy"></iframe>
 
                     <div class="resume-placeholder hidden" id="resume-placeholder">
                         <i class="fa-solid fa-file-pdf placeholder-icon text-green"></i>
                         <h4>Resume Viewer Ready</h4>
                         <p>
-                            Configured in view-only mode. Drop your <code>resume.pdf</code> into the project root
-                            directory, and it will immediately display here.
+                            If the resume does not load, check that its Google Drive sharing is set to Anyone with the link.
                         </p>
-                        <span class="pill-tag">View-Only Active</span>
+                        <span class="pill-tag">Google Drive Preview</span>
                     </div>
                 </div>
             </div>
