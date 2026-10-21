@@ -22,7 +22,7 @@ The website is built with standard HTML, CSS, and JavaScript, with Three.js used
 - **Project showcase:** Selected security, web application, and IoT projects with links to their source repositories.
 - **Skills section:** Technical skills presented for quick review.
 - **Certificate gallery:** Certificate images with interactive viewing.
-- **Resume access:** An on-site link to view the included PDF resume.
+- **Resume access:** An in-page preview of the resume hosted on Google Drive.
 - **Accessibility considerations:** Skip-to-content link, semantic sections, and labelled navigation controls.
 
 ## Featured Projects
@@ -47,7 +47,7 @@ Project technologies and implementation details are described in their respectiv
 - **Icons:** Font Awesome
 - **Hosting:** GitHub Pages
 
-This is a static website and does not require a framework build step.
+The resume is hosted separately on Google Drive and is embedded in the portfolio preview. This keeps the PDF out of the repository's current files. This is a static website and does not require a framework build step.
 
 ## Run Locally
 
@@ -77,7 +77,6 @@ Portfolio/
 ├── index.html    # Main portfolio page and page content
 ├── style.css     # Layout, responsive styling, and visual design
 ├── script.js     # Navigation and interactive behaviour
-├── resume.pdf    # Resume linked from the portfolio
 └── README.md     # Project documentation
 ```
 

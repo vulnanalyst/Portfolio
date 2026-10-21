@@ -323,7 +323,7 @@
             }
 
             if (iframe) {
-                iframe.src = 'resume.pdf#toolbar=0&navpanes=0&scrollbar=0';
+                iframe.src = 'https://drive.google.com/file/d/1GhNwkIVQh0cyW6IWtz1gKAGLvnOb8vHJ/preview';
                 iframe.style.display = 'block';
                 if (placeholder) placeholder.classList.add('hidden');
             }
