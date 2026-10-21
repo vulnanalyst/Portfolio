@@ -2,10 +2,12 @@
 
 A personal portfolio showcasing my security-focused projects, technical skills, certifications, and development work. The site combines a dark interface with an interactive Three.js visual, responsive navigation, project sections, a certificate gallery, and a resume viewer.
 
-**Live portfolio:** [vulnanalyst.github.io/Portfolio](https://vulnanalyst.github.io/Portfolio/)  
-**GitHub:** [@vulnanalyst](https://github.com/vulnanalyst)  
-**LinkedIn:** [Ayush Jakhmola](https://www.linkedin.com/in/ayush-jakhmola-/)  
-**Contact:** [jakhmolaayush51@gmail.com](mailto:jakhmolaayush51@gmail.com)
+<p>
+  <img src="https://cdn.simpleicons.org/googlechrome/4285F4" alt="Website" width="16" height="16" /> <strong>Live portfolio:</strong> <a href="https://vulnanalyst.github.io/Portfolio/">vulnanalyst.github.io/Portfolio</a><br />
+  <img src="https://cdn.simpleicons.org/github/181717" alt="GitHub" width="16" height="16" /> <strong>GitHub:</strong> <a href="https://github.com/vulnanalyst">@vulnanalyst</a><br />
+  <img src="https://cdn.simpleicons.org/linkedin/0A66C2" alt="LinkedIn" width="16" height="16" /> <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ayush-jakhmola-/">Ayush Jakhmola</a><br />
+  <img src="https://cdn.simpleicons.org/gmail/EA4335" alt="Email" width="16" height="16" /> <strong>Contact:</strong> <a href="mailto:jakhmolaayush51@gmail.com">jakhmolaayush51@gmail.com</a>
+</p>
 
 ---
 
@@ -87,10 +89,13 @@ The portfolio includes an interactive gallery of certificate images stored in th
 
 ## Contact
 
-- **Email:** [jakhmolaayush51@gmail.com](mailto:jakhmolaayush51@gmail.com)
-- **LinkedIn:** [Ayush Jakhmola](https://www.linkedin.com/in/ayush-jakhmola-/)
-- **GitHub:** [vulnanalyst](https://github.com/vulnanalyst)
-- **Location:** Dehradun, Uttarakhand, India
+<p>
+  <img src="https://cdn.simpleicons.org/gmail/EA4335" alt="Email" width="16" height="16" /> <a href="mailto:jakhmolaayush51@gmail.com">jakhmolaayush51@gmail.com</a><br />
+  <img src="https://cdn.simpleicons.org/linkedin/0A66C2" alt="LinkedIn" width="16" height="16" /> <a href="https://www.linkedin.com/in/ayush-jakhmola-/">LinkedIn</a><br />
+  <img src="https://cdn.simpleicons.org/github/181717" alt="GitHub" width="16" height="16" /> <a href="https://github.com/vulnanalyst">vulnanalyst</a><br />
+  <img src="https://cdn.simpleicons.org/googlechrome/4285F4" alt="Website" width="16" height="16" /> <a href="https://vulnanalyst.github.io/Portfolio/">Live Portfolio</a><br />
+  <strong>Location:</strong> Dehradun, Uttarakhand, India
+</p>
 
 ---
 
