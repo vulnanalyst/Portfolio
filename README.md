@@ -1,62 +1,97 @@
-# ✨ Ayush Jakhmola — Developer Portfolio
+# Ayush Jakhmola — Security Researcher Portfolio
 
-[![Live Portfolio](https://img.shields.io/badge/Live-Portfolio-8b5cf6?style=for-the-badge&logo=googlechrome&logoColor=white)](https://vulnanalyst.github.io/Portfolio/)
-[![GitHub](https://img.shields.io/badge/GitHub-vulnanalyst-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/vulnanalyst)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ayush_Jakhmola-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ayush-jakhmola-/)
-[![BCA Student](https://img.shields.io/badge/BCA-Graphic_Era_Hill_University-38bdf8?style=for-the-badge&logo=google-cloud&logoColor=white)](#)
+A personal portfolio showcasing my security-focused projects, technical skills, certifications, and development work. The site combines a dark interface with an interactive Three.js visual, responsive navigation, project sections, a certificate gallery, and a resume viewer.
 
-> **"Hi, I'm Ayush. I build, explore, and bring ideas to life."**  
-> A personal portfolio and creative digital showcase built with vanilla web standards and Three.js 3D.
-
----
-
-## 🎨 Creative & Visual Highlights
-
-- 🔮 **Artistic 3D Sculpture**: Interactive metallic-indigo Torus Knot sculpture with orbital rings, ambient stardust, and mouse/touch parallax built using [Three.js](https://threejs.org/).
-- 💼 **Personal Identity**: Showcases my projects, technical versatility, learning path, and university journey as a BCA student at Graphic Era Hill University.
-- ⚡ **Distinctive Projects**: Case studies across AI tools, full-stack web applications, security utilities, and embedded IoT hardware.
-- 📜 **Verified Credentials**: High-resolution certificate gallery with interactive modal inspection.
-- 📄 **Protected Resume Viewer**: Embedded view-only reader for `resume.pdf`.
-- 📱 **Fluid & Responsive**: Hand-crafted CSS layout, clamp typography, glassmorphism, and accessibility focus.
+**Live portfolio:** [vulnanalyst.github.io/Portfolio](https://vulnanalyst.github.io/Portfolio/)  
+**GitHub:** [@vulnanalyst](https://github.com/vulnanalyst)  
+**LinkedIn:** [Ayush Jakhmola](https://www.linkedin.com/in/ayush-jakhmola-/)  
+**Contact:** [jakhmolaayush51@gmail.com](mailto:jakhmolaayush51@gmail.com)
 
 ---
 
-## 🛠️ Featured Projects
+## About
 
-| Project | Category | Technologies | Source |
+I focus on offensive security, penetration testing, vulnerability assessment, and security research. This portfolio brings together selected projects and learning work across web application security, AI/LLM security, password security, full-stack development, and IoT.
+
+The website is built with standard HTML, CSS, and JavaScript, with Three.js used for interactive visual effects.
+
+## Portfolio Features
+
+- **Interactive visual experience:** Animated particle canvas and Three.js-powered visual elements.
+- **Responsive layout:** Navigation and page sections designed to adapt to different screen sizes.
+- **Project showcase:** Selected security, web application, and IoT projects with links to their source repositories.
+- **Skills section:** Technical skills presented for quick review.
+- **Certificate gallery:** Certificate images with interactive viewing.
+- **Resume access:** An on-site link to view the included PDF resume.
+- **Accessibility considerations:** Skip-to-content link, semantic sections, and labelled navigation controls.
+
+## Featured Projects
+
+| Project | Focus | Technologies / Concepts | Repository |
 |---|---|---|---|
-| **[SentinelLLM](https://github.com/vulnanalyst/LLM-Vulnerability-Scannner)** | AI Security Scanner | TypeScript, React, Vite, Supabase, Tailwind CSS, Recharts | [GitHub](https://github.com/vulnanalyst/LLM-Vulnerability-Scannner) |
-| **[Secure Cloud Banking](https://github.com/vulnanalyst/Secure-Cloud-Online-Banking-System)** | Full-Stack Web Platform | Python, Flask, MySQL, AES-256 Fernet, AWS EC2, OTP | [GitHub](https://github.com/vulnanalyst/Secure-Cloud-Online-Banking-System) |
-| **[Healthy Choice Cafe](https://github.com/vulnanalyst/Healthy-Choice-Cafe-Management-with-AI-Recommendations-Engine)** | Web Application & AI | Python Flask, MySQL, Machine Learning, OTP Auth | [GitHub](https://github.com/vulnanalyst/Healthy-Choice-Cafe-Management-with-AI-Recommendations-Engine) |
-| **[Password Cracking Analyzer](https://github.com/vulnanalyst/Password-Cracking-Analyzer-Tool)** | Security Tool | Python, Flask, Shannon Entropy, Cryptography | [GitHub](https://github.com/vulnanalyst/Password-Cracking-Analyzer-Tool) |
-| **[IoT Weather Station](https://github.com/vulnanalyst/weather_station)** | Hardware & IoT | NodeMCU ESP8266, DHT11, BMP180, ThingSpeak, C++ | [GitHub](https://github.com/vulnanalyst/weather_station) |
+| **SentinelLLM — LLM Vulnerability Scanner** | AI and LLM application security | TypeScript, React, Vite, Supabase, Tailwind CSS, Recharts | [View project](https://github.com/vulnanalyst/LLM-Vulnerability-Scannner) |
+| **Secure Cloud Online Banking System** | Full-stack banking workflow and application security concepts | Python, Flask, MySQL, authentication, transaction workflows | [View project](https://github.com/vulnanalyst/Secure-Cloud-Online-Banking-System) |
+| **Healthy Choice Cafe** | Web application with AI-based recommendations | Python, Flask, MySQL, machine-learning concepts | [View project](https://github.com/vulnanalyst/Healthy-Choice-Cafe-Management-with-AI-Recommendations-Engine) |
+| **Password Cracking & Analyzer Tool** | Password-strength analysis and algorithm demonstrations | Python, Flask, entropy, search algorithms | [View project](https://github.com/vulnanalyst/Password-Cracking-Analyzer-Tool) |
+| **IoT Weather Station** | Sensor-based weather monitoring | NodeMCU ESP8266, DHT11, BMP180, ThingSpeak, C++ | [View project](https://github.com/vulnanalyst/weather_station) |
 
----
+Project technologies and implementation details are described in their respective repositories. The banking project is an educational demonstration and should not be treated as production-ready financial software.
 
-## 🚀 Running Locally
+## Technology Stack
 
-This portfolio uses native web technologies without build complexity. You can run it locally with:
+- **Structure:** HTML5
+- **Styling:** CSS3
+- **Client-side interactions:** JavaScript
+- **3D and animation:** Three.js
+- **Typography:** Google Fonts
+- **Icons:** Font Awesome
+- **Hosting:** GitHub Pages
 
-### Option 1 — Python
+This is a static website and does not require a framework build step.
+
+## Run Locally
+
+### Option 1: Python
+
+From the repository root, run:
+
 ```bash
 python -m http.server 4321
 ```
-Open [http://localhost:4321](http://localhost:4321) in your browser.
 
-### Option 2 — Node.js
+Then open [http://localhost:4321](http://localhost:4321).
+
+### Option 2: Node.js
+
 ```bash
 npx serve .
 ```
 
----
+Open the local address shown by the command.
 
-## 📬 Connect with Me
+## Repository Structure
+
+```text
+Portfolio/
+├── images/       # Portraits, certificates, and project imagery
+├── index.html    # Main portfolio page and page content
+├── style.css     # Layout, responsive styling, and visual design
+├── script.js     # Navigation and interactive behaviour
+├── resume.pdf    # Resume linked from the portfolio
+└── README.md     # Project documentation
+```
+
+## Certificates
+
+The portfolio includes an interactive gallery of certificate images stored in the `images/` directory. Use the live site to browse the available certificates.
+
+## Contact
 
 - **Email:** [jakhmolaayush51@gmail.com](mailto:jakhmolaayush51@gmail.com)
-- **LinkedIn:** [https://www.linkedin.com/in/ayush-jakhmola-/](https://www.linkedin.com/in/ayush-jakhmola-/)
-- **GitHub:** [https://github.com/vulnanalyst](https://github.com/vulnanalyst)
+- **LinkedIn:** [Ayush Jakhmola](https://www.linkedin.com/in/ayush-jakhmola-/)
+- **GitHub:** [vulnanalyst](https://github.com/vulnanalyst)
 - **Location:** Dehradun, Uttarakhand, India
 
 ---
 
-*Designed & Built by Ayush Jakhmola © 2026.*
+Designed and built by Ayush Jakhmola.
