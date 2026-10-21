@@ -2,12 +2,10 @@
 
 A personal portfolio showcasing my security-focused projects, technical skills, certifications, and development work. The site combines a dark interface with an interactive Three.js visual, responsive navigation, project sections, a certificate gallery, and a resume viewer.
 
-<p>
-  <a href="https://vulnanalyst.github.io/Portfolio/"><img src="https://cdn.simpleicons.org/googlechrome/4285F4" alt="Website" width="18" height="18" /> Live Portfolio</a><br />
-  <a href="https://github.com/vulnanalyst"><img src="https://cdn.simpleicons.org/github/FFFFFF" alt="GitHub" width="18" height="18" /> GitHub Profile</a><br />
-  <a href="https://www.linkedin.com/in/ayush-jakhmola-/"><img src="https://cdn.simpleicons.org/linkedin/0A66C2" alt="LinkedIn" width="18" height="18" /> LinkedIn Profile</a><br />
-  <a href="mailto:jakhmolaayush51@gmail.com"><img src="https://cdn.simpleicons.org/gmail/EA4335" alt="Email" width="18" height="18" /> Email</a>
-</p>
+**Live portfolio:** [vulnanalyst.github.io/Portfolio](https://vulnanalyst.github.io/Portfolio/)  
+**GitHub:** [@vulnanalyst](https://github.com/vulnanalyst)  
+**LinkedIn:** [Ayush Jakhmola](https://www.linkedin.com/in/ayush-jakhmola-/)  
+**Contact:** [jakhmolaayush51@gmail.com](mailto:jakhmolaayush51@gmail.com)
 
 ---
 
@@ -89,13 +87,10 @@ The portfolio includes an interactive gallery of certificate images stored in th
 
 ## Contact
 
-<p>
-  <a href="mailto:jakhmolaayush51@gmail.com"><img src="https://cdn.simpleicons.org/gmail/EA4335" alt="Email" width="18" height="18" /> Email</a><br />
-  <a href="https://www.linkedin.com/in/ayush-jakhmola-/"><img src="https://cdn.simpleicons.org/linkedin/0A66C2" alt="LinkedIn" width="18" height="18" /> LinkedIn Profile</a><br />
-  <a href="https://github.com/vulnanalyst"><img src="https://cdn.simpleicons.org/github/FFFFFF" alt="GitHub" width="18" height="18" /> GitHub Profile</a><br />
-  <a href="https://vulnanalyst.github.io/Portfolio/"><img src="https://cdn.simpleicons.org/googlechrome/4285F4" alt="Website" width="18" height="18" /> Live Portfolio</a><br />
-  <strong>Location:</strong> Dehradun, Uttarakhand, India
-</p>
+- **Email:** [jakhmolaayush51@gmail.com](mailto:jakhmolaayush51@gmail.com)
+- **LinkedIn:** [Ayush Jakhmola](https://www.linkedin.com/in/ayush-jakhmola-/)
+- **GitHub:** [vulnanalyst](https://github.com/vulnanalyst)
+- **Location:** Dehradun, Uttarakhand, India
 
 ---
 
