@@ -1,251 +1,921 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
 
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Primary Meta Tags -->
+    <title>Ayush Jakhmola | Security Researcher</title>
+    <meta name="title" content="Ayush Jakhmola | Security Researcher">
+    <meta name="description"
+        content="Ayush Jakhmola — Security Researcher | BCA'27 | Passionate about Penetration Testing & Vulnerability Assessment. Graphic Era Hill University.">
+    <meta name="keywords"
+        content="Ayush Jakhmola, Security Researcher, BCA 2027, Penetration Testing, Vulnerability Assessment, Python, Web Security, Graphic Era Hill University">
+    <meta name="author" content="Ayush Jakhmola">
+    <meta name="theme-color" content="#07090e">
 
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vulnanalyst.github.io/Portfolio/">
+    <meta property="og:title" content="Ayush Jakhmola | Security Researcher">
+    <meta property="og:description"
+        content="Security Researcher | BCA'27 | Passionate about Penetration Testing & Vulnerability Assessment.">
+    <meta property="og:image" content="images/1.jpg.jpeg">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%2307090e'/><text x='50' y='62' font-family='monospace' font-size='32' font-weight='bold' fill='%2300ff9d' text-anchor='middle'>AJ</text></svg>">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Three.js (for ambient canvas particles) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    
-    <header class="header">
-        <a href="#" class="logo">Portfolio</a>
+    <a href="#main-content" class="skip-to-content">Skip to content</a>
 
-        <i class='bx bx-menu' id="menu-icon"></i>
+    <!-- Cyber Background Overlays -->
+    <div class="cyber-grid" aria-hidden="true"></div>
+    <div class="glow-orb glow-orb-1" aria-hidden="true"></div>
+    <div class="glow-orb glow-orb-2" aria-hidden="true"></div>
 
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#certificates">Certificates</a>
-            <a href="#contact">Contact</a>
-        </nav>
+    <!-- Navigation Header -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="#home" class="brand" aria-label="Ayush Jakhmola Home">
+                <span class="brand-badge">AJ</span>
+                <span class="brand-title">Ayush Jakhmola</span>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="nav" aria-label="Main Navigation">
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-item active">Home</a></li>
+                    <li><a href="#about" class="nav-item">About</a></li>
+                    <li><a href="#skills" class="nav-item">Skills</a></li>
+                    <li><a href="#projects" class="nav-item">Projects</a></li>
+                    <li><a href="#certificates" class="nav-item">Certificates</a></li>
+                    <li><a href="#contact" class="nav-item">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Actions: Resume & Mobile Hamburger -->
+            <div class="header-actions">
+                <a href="resume.pdf" class="btn-resume-header" id="resume-trigger-nav-btn"
+                    title="View Resume" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-file-lines"></i>
+                    <span>Resume</span>
+                </a>
+                <button type="button" class="mobile-toggle" id="mobile-toggle" aria-expanded="false"
+                    aria-controls="mobile-drawer" aria-label="Toggle navigation menu">
+                    <span class="bar bar-top"></span>
+                    <span class="bar bar-bottom"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+            <ul class="mobile-menu">
+                <li><a href="#home" class="mobile-item">Home</a></li>
+                <li><a href="#about" class="mobile-item">About</a></li>
+                <li><a href="#skills" class="mobile-item">Skills</a></li>
+                <li><a href="#projects" class="mobile-item">Projects</a></li>
+                <li><a href="#certificates" class="mobile-item">Certificates</a></li>
+                <li><a href="#contact" class="mobile-item">Contact</a></li>
+                <li><a href="resume.pdf" class="mobile-item mobile-resume-btn" id="resume-trigger-mobile-btn"
+                        target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-lines"></i> View Resume</a>
+                </li>
+            </ul>
+        </div>
     </header>
 
-    <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hello, It's Me</h3>
-            <h1>Ayush Jakhmola</h1>
-            <h3>And I'm  <span class="multiple-text"></span></h3>
-            
-            <p>My portfolio shows my experience in designing, building
-                and experience.
-                I'm excited to take on new challenges and keep learning.</p>
-            <div class="social-media">
-                <a href="https://www.linkedin.com/in/ayush-jakhmola-/"><i class='bx bxl-linkedin' ></i></a>
-                <a href="https://github.com/ayusjakhmola25"><i class='bx bxl-github' ></i></a>
-            </div>
-            <a href="#" class="btn">Download CV</a>
-        </div>
-
-        <div class="home-img">
-            <div class="content">
-                <img src="images/1.jpg.jpeg" alt="Picsart-25-03-12-18-25-12-901" border="0" class="my"/>
-            </div>
-         </div>
-    </section>
-
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="images/3.jpg.jpeg" alt="Stencil-02" border="0" class="my1"/>
-        </div>        
-
-
-            <div class="about-content">
-                <h2 class="heading"><span>About Me</span></h2>
-                <h3>Aspiring Software Engineer</h3>
-                <p>Hello! I'm Ayush Jakhmola, a curious and enthusiastic learner with a passion for
-                    Cybersecurity. I'm excited to explore the world 
-                     of tech, collaborate with like-minded individuals, 
-                     and create innovative solutions that drive impact.
-                      Let's connect and build something amazing together!</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-    </section>
-
-
-    <section class="skills" id="skills">
-        <h2 class="heading">My <span>Skills</span></h2>
-        <h6 class="heading">A dynamic set of technical abilities built through projects and continuous learning, showcasing adaptability and problem-solving.</h6>
-
-        <div class="skills-container">
-            <div class="skills-box">
-                <i class="fa-brands fa-aws"></i>
-                <h3>AWS</h3>       
-            </div>
-
-
-            
-            <div class="skills-box">
-                <i class="fa-solid fa-shield-halved"></i>
-                <h3>Cybersecurity</h3>
-            </div>
-
-                <div class="skills-box">
-                    <i class="fa-solid fa-globe"></i>
-                    <h3>Networking</h3>
-                </div>
-
-                
-
-                    <div class="skills-box">
-                        <i class="fa-solid fa-code"></i>
-                        <h3>DSA</h3>
+    <main id="main-content">
+        <!-- ==============================================
+             HERO SECTION (Aesthetic 3D Interactive Portrait & Clear Headline)
+             ============================================== -->
+        <section class="hero-section" id="home">
+            <div class="hero-container">
+                <!-- Left: Headline & Introduction -->
+                <div class="hero-intro">
+                    <div class="hero-pill">
+                        <span class="status-dot"></span>
+                        <span class="pill-text">Security Researcher | BCA'27</span>
                     </div>
 
+                    <h1 class="hero-name">Ayush Jakhmola</h1>
 
-                        <div class="skills-box">
-                            <i class="fa-solid fa-terminal"></i>
-                            <h3>Linux</h3>
+                    <h2 class="hero-tagline">
+                        Security Researcher | BCA'27 | <span class="gradient-accent">Passionate about Penetration
+                            Testing & Vulnerability Assessment</span>
+                    </h2>
+
+                    <p class="hero-summary">
+                        Offensive Security Researcher and Penetration Tester focused on web application
+                        security, network penetration testing, and vulnerability assessment.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="hero-cta-group">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Explore Projects</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="resume.pdf" class="btn btn-secondary" id="hero-resume-trigger" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fa-solid fa-file-lines"></i>
+                            <span>View Resume</span>
+                        </a>
+                        <a href="#contact" class="btn btn-ghost">
+                            <span>Get in Touch</span>
+                        </a>
+                    </div>
+
+                    <!-- Social Channels -->
+                    <div class="hero-social-dock">
+                        <a href="https://github.com/vulnanalyst" target="_blank" rel="noopener noreferrer"
+                            class="social-link" aria-label="GitHub" title="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ayush-jakhmola-/" target="_blank" rel="noopener noreferrer"
+                            class="social-link" aria-label="LinkedIn" title="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="mailto:jakhmolaayush51@gmail.com" class="social-link" aria-label="Email" title="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+                        <span class="location-tag">
+                            <i class="fa-solid fa-location-dot"></i> Dehradun, India
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Right: Interactive Cinematic Image Card -->
+                <div class="hero-card-wrapper">
+                    <!-- Particle Canvas Layer -->
+                    <canvas id="ambient-particles" class="particles-canvas" aria-hidden="true"></canvas>
+
+                    <!-- Image Card with Entrance Animation -->
+                    <div class="card-scene" id="card-scene">
+                        <div class="card-frame" id="hero-card">
+                            <!-- HUD Status Bar -->
+                            <div class="card-hud-bar">
+                                <span class="hud-status"><span class="hud-blink-dot"></span> ONLINE</span>
+                            </div>
+
+                            <!-- Phase Overlay with Scanline -->
+                            <div class="card-phase-overlay" id="phase-overlay">
+                                <span class="phase-scanline" id="phase-scanline"></span>
+                                <div class="phase-reticle-tl"></div>
+                                <div class="phase-reticle-tr"></div>
+                                <div class="phase-reticle-bl"></div>
+                                <div class="phase-reticle-br"></div>
+                            </div>
+
+                            <!-- Holographic Glare Shimmer -->
+                            <div class="card-shimmer" id="card-shimmer"></div>
+
+                            <!-- Image -->
+                            <div class="card-image-wrap">
+                                <img src="images/1.jpg.png" alt="Ayush Jakhmola" class="card-photo" id="hero-portrait">
+                            </div>
+
+                            <!-- Floating Badges -->
+                            <div class="card-floating-badge badge-top">
+                                <span class="badge-indicator"></span>
+                                <span>AYUSH JAKHMOLA</span>
+                            </div>
+                            <div class="card-floating-badge badge-bottom">
+                                <i class="fa-solid fa-shield-halved text-cyan"></i>
+                                <span>Security Researcher</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             ABOUT ME SECTION (Authentic, In-Depth & Focused)
+             ============================================== -->
+        <section class="section about-section" id="about">
+            <div class="section-container">
+                <div class="section-title-wrap">
+                    <span class="section-badge">About Me</span>
+                    <h2 class="section-heading">Offensive Security Researcher</h2>
+                </div>
+
+                <div class="about-grid">
+                    <!-- Portrait Visual -->
+                    <div class="about-visual">
+                        <div class="about-image-card">
+                            <div class="image-frame">
+                                <img src="images/3.jpg.png" alt="Ayush Jakhmola" class="about-photo" loading="lazy">
+                            </div>
+                            <div class="about-tag-strip">
+                                <strong>Ayush Jakhmola</strong>
+                                <span>BCA '27 • Graphic Era Hill University</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- In-depth Story & Security Pillars -->
+                    <div class="about-content">
+                        <p class="about-lead">
+                            Offensive Security Researcher and Penetration Tester focused on web application
+                            security, network penetration testing, vulnerability assessment, and security research.
+                        </p>
+                        <p class="about-text">
+                            Interested in cloud security, Wi-Fi security, Active Directory, and AI/LLM application
+                            security. Currently pursuing <strong>BCA (Hons.) Cyber Security</strong> at
+                            Graphic Era Hill University, Dehradun.
+                        </p>
+                        <p class="about-text">
+                            Hands-on experience with cybersecurity tools, Linux environments, security labs, and
+                            security-focused project development.
+                        </p>
+
+                        <!-- Key Pillars Grid -->
+                        <div class="pillars-grid">
+                            <div class="pillar-card">
+                                <i class="fa-solid fa-user-shield pillar-icon text-green"></i>
+                                <h3>Penetration Testing</h3>
+                                <p>Reconnaissance, vulnerability scanning, and testing web applications against OWASP
+                                    Top 10 risks.</p>
+                            </div>
+
+                            <div class="pillar-card">
+                                <i class="fa-solid fa-shield-virus pillar-icon text-cyan"></i>
+                                <h3>Vulnerability Assessment</h3>
+                                <p>Identifying misconfigurations, assessing attack surfaces, and formulating mitigation
+                                    strategies.</p>
+                            </div>
+
+                            <div class="pillar-card">
+                                <i class="fa-solid fa-network-wired pillar-icon text-cyan"></i>
+                                <h3>Network & Protocols</h3>
+                                <p>Deep packet inspection with Wireshark, TCP/IP fundamentals, and CCNA routing
+                                    coursework.</p>
+                            </div>
+
+                            <div class="pillar-card">
+                                <i class="fa-solid fa-terminal pillar-icon text-green"></i>
+                                <h3>Security Automation</h3>
+                                <p>Writing custom Python audit scripts, testing LLM safeguard bypasses, and security
+                                    tooling.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             SKILLS SECTION (Interactive & Clean)
+             ============================================== -->
+        <section class="section skills-section" id="skills">
+            <div class="section-container">
+                <div class="section-title-wrap">
+                    <span class="section-badge">Arsenal</span>
+                    <h2 class="section-heading">Skills & Technologies</h2>
+                </div>
+
+                <!-- Category Tabs -->
+                <div class="skills-tab-bar" role="tablist" aria-label="Skills Category Filter">
+                    <button type="button" class="tab-btn active" data-filter="all" role="tab"
+                        aria-selected="true">All</button>
+                    <button type="button" class="tab-btn" data-filter="security" role="tab"
+                        aria-selected="false">Security & Networking</button>
+                    <button type="button" class="tab-btn" data-filter="languages" role="tab"
+                        aria-selected="false">Languages</button>
+                    <button type="button" class="tab-btn" data-filter="web" role="tab" aria-selected="false">Web &
+                        Backend</button>
+                    <button type="button" class="tab-btn" data-filter="tools" role="tab" aria-selected="false">Cloud &
+                        Tools</button>
+                </div>
+
+                <!-- Skills Grid -->
+                <div class="skills-grid" id="skills-grid">
+                    <div class="skill-card" data-category="security">
+                        <div class="skill-top"><i class="fa-solid fa-shield-halved skill-icon text-green"></i><span
+                                class="skill-tag">Testing</span></div>
+                        <h3 class="skill-name">Penetration Testing</h3>
+                        <p class="skill-desc">Vulnerability assessment, reconnaissance, and web security testing.</p>
+                    </div>
+
+                    <div class="skill-card" data-category="security tools">
+                        <div class="skill-top"><i class="fa-brands fa-linux skill-icon text-cyan"></i><span
+                                class="skill-tag">OS</span></div>
+                        <h3 class="skill-name">Kali Linux</h3>
+                        <p class="skill-desc">Primary OS environment for testing tools, scripting, and security labs.
+                        </p>
+                    </div>
+
+                    <div class="skill-card" data-category="security">
+                        <div class="skill-top"><i class="fa-solid fa-satellite-dish skill-icon text-green"></i><span
+                                class="skill-tag">Recon</span></div>
+                        <h3 class="skill-name">Nmap & Scanning</h3>
+                        <p class="skill-desc">Network host discovery, port auditing, and service version detection.</p>
+                    </div>
+
+                    <div class="skill-card" data-category="security">
+                        <div class="skill-top"><i class="fa-solid fa-spider skill-icon text-cyan"></i><span
+                                class="skill-tag">Proxy</span></div>
+                        <h3 class="skill-name">Burp Suite</h3>
+                        <p class="skill-desc">HTTP request interception, parameter analysis, and web vulnerability
+                            audits.</p>
+                    </div>
+
+                    <div class="skill-card" data-category="languages web">
+                        <div class="skill-top"><i class="fa-brands fa-python skill-icon text-green"></i><span
+                                class="skill-tag">Core</span></div>
+                        <h3 class="skill-name">Python 3</h3>
+                        <p class="skill-desc">Backend development, automation scripts, security tools, and data
+                            processing.</p>
+                    </div>
+
+                    <div class="skill-card" data-category="languages">
+                        <div class="skill-top"><i class="fa-solid fa-code skill-icon text-cyan"></i><span
+                                class="skill-tag">Systems</span></div>
+                        <h3 class="skill-name">C & C++</h3>
+                        <p class="skill-desc">Data structures, algorithms, memory fundamentals, and embedded C.</p>
+                    </div>
+
+                    <div class="skill-card" data-category="languages web">
+                        <div class="skill-top"><i class="fa-brands fa-js skill-icon text-green"></i><span
+                                class="skill-tag">Frontend</span></div>
+                        <h3 class="skill-name">JavaScript (ES6+)</h3>
+                        <p class="skill-desc">Interactive web interfaces, DOM manipulation, 3D WebGL interactions.</p>
+                    </div>
+
+                    <div class="skill-card" data-category="web">
+                        <div class="skill-top"><i class="fa-solid fa-server skill-icon text-cyan"></i><span
+                                class="skill-tag">Backend</span></div>
+                        <h3 class="skill-name">Flask Framework</h3>
+                        <p class="skill-desc">REST API development, authentication routing, and session management.</p>
+                    </div>
+
+                    <div class="skill-card" data-category="web tools">
+                        <div class="skill-top"><i class="fa-solid fa-database skill-icon text-green"></i><span
+                                class="skill-tag">Database</span></div>
+                        <h3 class="skill-name">MySQL & SQL</h3>
+                        <p class="skill-desc">Relational database design, secure queries, and parameterized operations.
+                        </p>
+                    </div>
+
+                    <div class="skill-card" data-category="security">
+                        <div class="skill-top"><i class="fa-solid fa-network-wired skill-icon text-cyan"></i><span
+                                class="skill-tag">CCNA</span></div>
+                        <h3 class="skill-name">Networking & Wireshark</h3>
+                        <p class="skill-desc">TCP/IP packet inspection, CCNA routing basics, and protocol
+                            troubleshooting.</p>
+                    </div>
+
+                    <div class="skill-card" data-category="tools">
+                        <div class="skill-top"><i class="fa-brands fa-aws skill-icon text-green"></i><span
+                                class="skill-tag">Cloud</span></div>
+                        <h3 class="skill-name">AWS Cloud</h3>
+                        <p class="skill-desc">EC2 virtual machines, RDS database hosting, and IAM security policies.</p>
+                    </div>
+
+                    <div class="skill-card" data-category="tools">
+                        <div class="skill-top"><i class="fa-brands fa-git-alt skill-icon text-cyan"></i><span
+                                class="skill-tag">Git</span></div>
+                        <h3 class="skill-name">Git & GitHub</h3>
+                        <p class="skill-desc">Source control, repository management, and automated deployment actions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             PROJECTS SECTION (Concise, Clean Showcases)
+             ============================================== -->
+        <section class="section projects-section" id="projects">
+            <div class="section-container">
+                <div class="section-title-wrap">
+                    <span class="section-badge">Work</span>
+                    <h2 class="section-heading">Featured Projects</h2>
+                </div>
+
+                <div class="projects-list">
+                    <!-- 1. SentinelLLM -->
+                    <article class="project-item">
+                        <div class="project-info">
+                            <span class="project-cat text-green">AI & Web Security</span>
+                            <h3 class="project-title">SentinelLLM — LLM Vulnerability Scanner</h3>
+                            <p class="project-text">
+                                A web-based tool for exploring security assessment workflows for Large Language Model
+                                (LLM) applications. Tests prompt injection, safeguard bypasses, and outputs downloadable
+                                PDF audit reports.
+                            </p>
+                            <div class="project-tags">
+                                <span>TypeScript</span>
+                                <span>React</span>
+                                <span>Vite</span>
+                                <span>Supabase</span>
+                                <span>Tailwind CSS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/vulnanalyst/LLM-Vulnerability-Scannner" target="_blank"
+                                    rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span>Repository</span>
+                                </a>
+                                <button type="button" class="btn btn-sm btn-ghost proj-details-trigger">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                    <span>Details</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-media">
+                            <div class="project-img-box">
+                                <img src="images/SentinelLLM Vulnerability Scanner.png"
+                                    alt="SentinelLLM Security Scanner" loading="lazy">
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 2. Secure Cloud Online Banking System -->
+                    <article class="project-item">
+                        <div class="project-info">
+                            <span class="project-cat text-cyan">Full-Stack & Cloud Security</span>
+                            <h3 class="project-title">Secure Cloud Online Banking Platform</h3>
+                            <p class="project-text">
+                                Full-stack cloud banking application using Python Flask and MySQL. Features AES-256
+                                field-level encryption for account numbers, SHA-256 transaction integrity hashing, and
+                                OTP authentication.
+                            </p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Flask</span>
+                                <span>MySQL</span>
+                                <span>AES-256</span>
+                                <span>AWS EC2</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/vulnanalyst/Secure-Cloud-Online-Banking-System"
+                                    target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span>Repository</span>
+                                </a>
+                            </div>
                         </div>
 
-                        <div class="skills-box">
-                            <i class="fa-solid fa-database"></i>
-                            <h3>SQL</h3>
+                        <div class="project-media">
+                            <div class="project-img-box">
+                                <img src="images/secure.jpg" alt="Secure Online Banking System" loading="lazy">
+                            </div>
                         </div>
-        
-        </div>
-    </section>
+                    </article>
 
-    <section class="projects" id="projects">
-        <h2 class="heading">My <span>Projects</span></h2>
+                    <!-- 3. Healthy Choice Cafe with AI -->
+                    <article class="project-item">
+                        <div class="project-info">
+                            <span class="project-cat text-green">Web Application & AI</span>
+                            <h3 class="project-title">Healthy Choice Cafe Management with AI</h3>
+                            <p class="project-text">
+                                Web-based cafeteria platform featuring machine learning dietary recommendation
+                                algorithms, user authentication, OTP transaction verification, and automated PDF invoice
+                                generation.
+                            </p>
+                            <div class="project-tags">
+                                <span>Python Flask</span>
+                                <span>Machine Learning</span>
+                                <span>MySQL</span>
+                                <span>OTP Auth</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/vulnanalyst/Healthy-Choice-Cafe-Management-with-AI-Recommendations-Engine"
+                                    target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span>Repository</span>
+                                </a>
+                            </div>
+                        </div>
 
-        <div class="project-container">
-            <div class="project-box">
-                <img src="images/cafe.jpg" alt="Cafe Project">
+                        <div class="project-media">
+                            <div class="project-img-box">
+                                <img src="images/Healthy Choice Café AI Logo.png" alt="Healthy Choice Cafe Management"
+                                    loading="lazy">
+                            </div>
+                        </div>
+                    </article>
 
-                <div class="project-layer">
-                    <h4>Healthy Choice Cafe Management with AI Recommendations Engine</h4>
-                    <p>Web based cafe management system with user login, food ordering interface and admin control panel.</p>
-                    <a href="https://github.com/ayusjakhmola25/Healthy-Choice-Cafe-Management-with-AI-Recommendations-Engine.git">
-                        <i class='bx bx-link-external'></i>
-                    </a>
+                    <!-- 4. Password Cracking Analyzer -->
+                    <article class="project-item">
+                        <div class="project-info">
+                            <span class="project-cat text-green">Security Tool & Cryptography</span>
+                            <h3 class="project-title">Password Cracking & Analyzer Tool</h3>
+                            <p class="project-text">
+                                A Python-Flask web utility for calculating Shannon entropy, simulating dictionary and
+                                brute-force cracking resistance, and analyzing credential strength.
+                            </p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Flask</span>
+                                <span>Entropy Math</span>
+                                <span>Cryptography</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/vulnanalyst/Password-Cracking-Analyzer-Tool"
+                                    target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span>Repository</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-media">
+                            <div class="project-img-box">
+                                <img src="images/Password Cracking Analyzer Shield.png" alt="Password Cracking Analyzer"
+                                    loading="lazy">
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 6. IoT Weather Station -->
+                    <article class="project-item">
+                        <div class="project-info">
+                            <span class="project-cat text-cyan">IoT & Embedded Systems</span>
+                            <h3 class="project-title">IoT Weather & Environmental Station</h3>
+                            <p class="project-text">
+                                Embedded weather monitoring system using NodeMCU ESP8266, DHT11, and BMP180 sensors for
+                                temperature, humidity, and barometric pressure tracking with OLED readout and ThingSpeak
+                                cloud telemetry.
+                            </p>
+                            <div class="project-tags">
+                                <span>ESP8266</span>
+                                <span>C / C++</span>
+                                <span>ThingSpeak</span>
+                                <span>Sensors</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/vulnanalyst/weather_station" target="_blank"
+                                    rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span>Repository</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-media">
+                            <div class="project-img-box">
+                                <img src="images/weather_station_logo_transparent.png" alt="Weather Station"
+                                    loading="lazy">
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
+        </section>
 
-            <div class="project-box">
-                <img src="images/password.jpg" alt="AWS Project">
+        <!-- ==============================================
+             CERTIFICATES SECTION (Verified Credentials)
+             ============================================== -->
+        <section class="section certs-section" id="certificates">
+            <div class="section-container">
+                <div class="section-title-wrap">
+                    <span class="section-badge">Credentials</span>
+                    <h2 class="section-heading">Verified Certificates</h2>
+                </div>
 
-                <div class="project-layer">
-                    <h4>Password Cracking Analyzer Tool</h4>
-                    <p>A Python-Flask based tool for password strength analysis and password cracking simulation</p>
-                    <a href="https://github.com/ayusjakhmola25/Password-Cracking-Analyzer-Tool.git">
-                        <i class='bx bx-link-external'></i>
-                    </a>
+                <div class="certs-grid" id="certs-grid">
+                    <div class="cert-card" data-src="images/Cyber Security Analyst Job Simulation_page-0001.jpg"
+                        data-title="Cybersecurity Analyst Job Simulation" data-issuer="Cisco Networking Academy"
+                        tabindex="0">
+                        <div class="cert-thumb">
+                            <img src="images/EthicalHacker.jpg" alt="EthicalHacker Certificate" loading="lazy">
+                            <div class="cert-hover-icon"><i class="fa-solid fa-expand"></i></div>
+                        </div>
+                        <div class="cert-meta">
+                            <span class="cert-org text-green">Cisco Networking Academy</span>
+                            <h4 class="cert-title">EthicalHacker</h4>
+                        </div>
+                    </div>
+
+                    <div class="cert-card" data-src="images/CCNA Introduction to Networks.jpg"
+                        data-title="CCNA: Introduction to Networks" data-issuer="Cisco Networking Academy" tabindex="0">
+                        <div class="cert-thumb">
+                            <img src="images/CCNA Introduction to Networks.jpg"
+                                alt="CCNA Introduction to Networks Certificate" loading="lazy">
+                            <div class="cert-hover-icon"><i class="fa-solid fa-expand"></i></div>
+                        </div>
+                        <div class="cert-meta">
+                            <span class="cert-org text-cyan">Cisco Networking Academy</span>
+                            <h4 class="cert-title">CCNA: Introduction to Networks</h4>
+                        </div>
+                    </div>
+
+                    <div class="cert-card" data-src="images/Introduction To Cyber Security_page-0001.jpg"
+                        data-title="Introduction to Cybersecurity" data-issuer="Cisco Networking Academy" tabindex="0">
+                        <div class="cert-thumb">
+                            <img src="images/Introduction To Cyber Security_page-0001.jpg"
+                                alt="Introduction to Cybersecurity Certificate" loading="lazy">
+                            <div class="cert-hover-icon"><i class="fa-solid fa-expand"></i></div>
+                        </div>
+                        <div class="cert-meta">
+                            <span class="cert-org text-cyan">Cisco Networking Academy</span>
+                            <h4 class="cert-title">Introduction to Cybersecurity</h4>
+                        </div>
+                    </div>
+
+                    <div class="cert-card" data-src="images/NetworkingBasics_page-0001.jpg"
+                        data-title="Networking Basics" data-issuer="Cisco Networking Academy" tabindex="0">
+                        <div class="cert-thumb">
+                            <img src="images/NetworkingBasics_page-0001.jpg" alt="Networking Basics Certificate"
+                                loading="lazy">
+                            <div class="cert-hover-icon"><i class="fa-solid fa-expand"></i></div>
+                        </div>
+                        <div class="cert-meta">
+                            <span class="cert-org text-cyan">Cisco Networking Academy</span>
+                            <h4 class="cert-title">Networking Basics</h4>
+                        </div>
+                    </div>
+
+                    <div class="cert-card" data-src="images/NetworkDefense.jpg" data-title="Network Defense"
+                        data-issuer="Cisco Networking Academy" tabindex="0">
+                        <div class="cert-thumb">
+                            <img src="images/NetworkDefense.jpg" alt="Network Defense Certificate" loading="lazy">
+                            <div class="cert-hover-icon"><i class="fa-solid fa-expand"></i></div>
+                        </div>
+                        <div class="cert-meta">
+                            <span class="cert-org text-cyan">Cisco Networking Academy</span>
+                            <h4 class="cert-title">Network Defense</h4>
+                        </div>
+                    </div>
+
+                    <div class="cert-card" data-src="images/IOT NETWOEK SPECIALIST FOUNDATION_page-0001.jpg"
+                        data-title="IoT Network Specialist Foundation" data-issuer="IoT Academy" tabindex="0">
+                        <div class="cert-thumb">
+                            <img src="images/Cyber Security Analyst Job Simulation_page-0001.jpg"
+                                alt="Cyber Security Analyst Job Simulation Certificate" loading="lazy">
+                            <div class="cert-hover-icon"><i class="fa-solid fa-expand"></i></div>
+                        </div>
+                        <div class="cert-meta">
+                            <span class="cert-org text-cyan">Tata / Forage</span>
+                            <h4 class="cert-title">Cyber Security Analyst Job Simulation</h4>
+                        </div>
+                    </div>
+                    <div class="cert-card" data-src="images/IOT NETWOEK SPECIALIST FOUNDATION_page-0001.jpg"
+                        data-title="IoT Network Specialist Foundation" data-issuer="IoT Academy" tabindex="0">
+                        <div class="cert-thumb">
+                            <img src="images/IOT NETWOEK SPECIALIST FOUNDATION_page-0001.jpg"
+                                alt="IoT Network Specialist Foundation Certificate" loading="lazy">
+                            <div class="cert-hover-icon"><i class="fa-solid fa-expand"></i></div>
+                        </div>
+                        <div class="cert-meta">
+                            <span class="cert-org text-muted">Reliance Foundation</span>
+                            <h4 class="cert-title">IoT Network Specialist Foundation</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="project-box">
-                <img src="images/secure.jpg" alt="Cybersecurity Project">
+        <!-- ==============================================
+             CONTACT SECTION (Clean & Direct)
+             ============================================== -->
+        <section class="section contact-section" id="contact">
+            <div class="section-container">
+                <div class="section-title-wrap">
+                    <span class="section-badge">Contact</span>
+                    <h2 class="section-heading">Get in Touch</h2>
+                </div>
 
-                <div class="project-layer">
-                    <h4>Secure Cloud Online Banking System</h4>
-                    <p>A cloud-based secure online banking system designed to provide safe user authentication, transaction management, and data protection through modern web security practices..</p>
-                    <a href="https://github.com/ayusjakhmola25/Secure-Online-Banking-System.git">
-                        <i class='bx bx-link-external'></i>
-                    </a>
+                <div class="contact-grid">
+                    <!-- Direct Details Card -->
+                    <div class="contact-details-box">
+                        <h3 class="details-heading">Let's Connect</h3>
+                        <p class="details-desc">
+                            Feel free to reach out for project collaborations, security discussions, or technical
+                            opportunities.
+                        </p>
+
+                        <div class="contact-links-list">
+                            <a href="mailto:jakhmolaayush51@gmail.com" class="direct-link">
+                                <i class="fa-solid fa-envelope link-icon text-green"></i>
+                                <div>
+                                    <span class="link-label">Email</span>
+                                    <span class="link-text">jakhmolaayush51@gmail.com</span>
+                                </div>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/ayush-jakhmola-/" target="_blank"
+                                rel="noopener noreferrer" class="direct-link">
+                                <i class="fa-brands fa-linkedin-in link-icon text-cyan"></i>
+                                <div>
+                                    <span class="link-label">LinkedIn</span>
+                                    <span class="link-text">linkedin.com/in/ayush-jakhmola-</span>
+                                </div>
+                            </a>
+
+                            <a href="https://github.com/vulnanalyst" target="_blank" rel="noopener noreferrer"
+                                class="direct-link">
+                                <i class="fa-brands fa-github link-icon text-green"></i>
+                                <div>
+                                    <span class="link-label">GitHub</span>
+                                    <span class="link-text">github.com/vulnanalyst</span>
+                                </div>
+                            </a>
+
+                            <div class="direct-link link-static">
+                                <i class="fa-solid fa-location-dot link-icon text-muted"></i>
+                                <div>
+                                    <span class="link-label">Location</span>
+                                    <span class="link-text">Dehradun, Uttarakhand, India</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Clean Form -->
+                    <div class="contact-form-box">
+                        <form class="clean-form" id="contact-form" novalidate>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="contact-name">Your Name *</label>
+                                    <input type="text" id="contact-name" name="name" class="input-elem"
+                                        placeholder="e.g. Alex" required autocomplete="name">
+                                    <span class="error-text" id="name-error"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="contact-email">Your Email *</label>
+                                    <input type="email" id="contact-email" name="email" class="input-elem"
+                                        placeholder="e.g. alex@example.com" required autocomplete="email">
+                                    <span class="error-text" id="email-error"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-subject">Subject *</label>
+                                <input type="text" id="contact-subject" name="subject" class="input-elem"
+                                    placeholder="e.g. Collaboration Opportunity" required>
+                                <span class="error-text" id="subject-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-message">Message *</label>
+                                <textarea id="contact-message" name="message" class="input-elem textarea-elem" rows="5"
+                                    placeholder="Write your message here..." required></textarea>
+                                <span class="error-text" id="message-error"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block" id="contact-submit-btn">
+                                <span>Send Message</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+
+                            <div class="form-feedback" id="form-feedback" role="alert" aria-live="polite"></div>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <section class="certificates" id="certificates">
-        <h2 class="heading">Latest <span>Certificates</span></h2>
-        <div class="certificate-container">
-            <div class="certificate-box">
-                <img src="images/Cyber Security Analyst Job Simulation_page-0001.jpg" />
-                <div class="certificate-layer">
-                    <h4>Tata Foage</h4>
-
-                </div>
-            </div>
-
-            <div class="certificate-box">
-                <img src="images/NetworkingBasics_page-0001.jpg" />
-                <div class="certificate-layer">
-                    <h4>Networking Basics</h4>
-                </div>
-            </div>
-             <div class="certificate-box">
-                <img src="images/CCNA Introduction to Networks.jpg" />
-                <div class="certificate-layer">
-                    <h4>CCNA Introduction to Networks</h4>
-                </div>
-            </div>
-            
-            <div class="certificate-box">
-                <img src="images/Introduction To Cyber Security_page-0001.jpg" />
-                <div class="certificate-layer">
-                    <h4>Introduction to Cybersecurity</h4>
-                </div>
-            </div>
-
-            <div class="certificate-box">
-                <img src="images/IOT NETWOEK SPECIALIST FOUNDATION_page-0001.jpg" />
-                <div class="certificate-layer">
-                    <h4> IOT Network Specialist</h4>
-                </div>
-            </div>
-            <div class="certificate-box">
-                <img src="images/AWS Cloud Practitioner Essentials_page-0001.jpg" />
-                <div class="certificate-layer">
-                    <h4>AWS Cloud Practitioner Essentials</h4>
-                </div>
-            </div>
-            <div class="certificate-box">
-                <img src="images/Intro.jpg" />
-                <div class="certificate-layer">
-                    <h4>INTRODUCTION TO GENERATIVE AI</h4>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me!</span></h2>
-        <form action="#">
-            <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
-            </div>
-            <div class="input-box">
-                <input type="Number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
-            </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="Submit" value="Send Message" class="btn">
-        </form>
-    </section>
-
-
+    <!-- Footer -->
     <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2025 by Ayush Jakhmola| All Rights Reserved.</p>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <strong>Ayush Jakhmola</strong>
+                <span>Security Researcher | BCA'27</span>
+            </div>
+
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#certificates">Certificates</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="footer-right">
+                <a href="#home" class="back-to-top" aria-label="Return to top">
+                    <span>Back to top</span>
+                    <i class="fa-solid fa-arrow-up"></i>
+                </a>
+            </div>
         </div>
 
-        <div class="footer-iconTop">
-            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        <div class="footer-bottom">
+            <span>&copy; 2026 Ayush Jakhmola. All rights reserved.</span>
+            <div class="footer-icons">
+                <a href="https://github.com/vulnanalyst" target="_blank" rel="noopener noreferrer"
+                    aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ayush-jakhmola-/" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:jakhmolaayush51@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
         </div>
     </footer>
 
-    <!--scrollreveal--->
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- ==============================================
+         RESUME VIEWER MODAL (Protected View Only)
+         ============================================== -->
+    <div class="modal-layer" id="resume-modal" role="dialog" aria-modal="true" aria-labelledby="resume-title"
+        aria-hidden="true">
+        <div class="modal-dimmer" id="resume-backdrop"></div>
+        <div class="modal-window resume-window">
+            <div class="modal-header">
+                <div class="modal-title-wrap">
+                    <i class="fa-solid fa-file-shield text-green"></i>
+                    <h3 class="modal-title" id="resume-title">Ayush Jakhmola — Resume Preview</h3>
+                </div>
+                <button type="button" class="modal-close-x" id="resume-close-btn"
+                    aria-label="Close modal">&times;</button>
+            </div>
+            <div class="modal-body" oncontextmenu="return false;">
+                <div class="resume-container">
+                    <iframe src="resume.pdf#toolbar=0&navpanes=0&scrollbar=0" id="resume-iframe" class="resume-iframe"
+                        title="Ayush Jakhmola Resume (View Only)" loading="lazy"></iframe>
 
-    <!----typed js---->
+                    <div class="resume-placeholder hidden" id="resume-placeholder">
+                        <i class="fa-solid fa-file-pdf placeholder-icon text-green"></i>
+                        <h4>Resume Viewer Ready</h4>
+                        <p>
+                            Configured in view-only mode. Drop your <code>resume.pdf</code> into the project root
+                            directory, and it will immediately display here.
+                        </p>
+                        <span class="pill-tag">View-Only Active</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- ==============================================
+         CERTIFICATE VIEWER MODAL
+         ============================================== -->
+    <div class="modal-layer" id="cert-modal" role="dialog" aria-modal="true" aria-labelledby="cert-modal-heading"
+        aria-hidden="true">
+        <div class="modal-dimmer" id="cert-backdrop"></div>
+        <div class="modal-window cert-window">
+            <div class="modal-header">
+                <span class="cert-modal-org" id="cert-modal-issuer"></span>
+                <button type="button" class="modal-close-x" id="cert-close-btn"
+                    aria-label="Close certificate">&times;</button>
+            </div>
+            <div class="modal-body cert-modal-body">
+                <div class="cert-view-wrap">
+                    <img src="" alt="" id="cert-modal-img" class="cert-view-img">
+                </div>
+                <h4 class="cert-modal-caption" id="cert-modal-heading"></h4>
+            </div>
+        </div>
+    </div>
 
-    <!-- custom js-->
+    <!-- ==============================================
+         SENTINELLM DETAILS MODAL
+         ============================================== -->
+    <div class="modal-layer" id="sentinel-modal" role="dialog" aria-modal="true" aria-labelledby="intel-modal-title"
+        aria-hidden="true">
+        <div class="modal-dimmer" id="intel-backdrop"></div>
+        <div class="modal-window intel-window">
+            <div class="modal-header">
+                <h3 class="modal-title" id="intel-modal-title">SentinelLLM — Project Architecture</h3>
+                <button type="button" class="modal-close-x" id="intel-close-btn"
+                    aria-label="Close details">&times;</button>
+            </div>
+            <div class="modal-body intel-body">
+                <h4>LLM Safeguard Assessment</h4>
+                <p>
+                    SentinelLLM is an exploratory tool for testing LLM application safeguards against Prompt Injection,
+                    Jailbreak Bypasses, and Sensitive Data Disclosure, generating client-side PDF audit reports.
+                </p>
+                <div class="tech-chip-row">
+                    <span>TypeScript</span>
+                    <span>React 18</span>
+                    <span>Vite</span>
+                    <span>Supabase</span>
+                    <span>Tailwind CSS</span>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Main JavaScript Logic -->
     <script src="script.js"></script>
-
 </body>
+
 </html>
